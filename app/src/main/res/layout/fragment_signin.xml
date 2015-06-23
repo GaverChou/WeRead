@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="64dp"
+        android:paddingRight="64dp">
+
+        <ImageView
+            android:id="@+id/me_user_thumb"
+            style="@style/Touxiang_Big_Big"
+            android:layout_below="@+id/me_profile_img"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/padding_xxh"
+            android:src="@mipmap/img1" />
+
+        <EditText
+            android:id="@+id/signin_username_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_h"
+            android:ems="10"
+            android:hint="@string/username"
+            android:inputType="textPersonName"
+            android:textSize="@dimen/h_textsiz" />
+
+        <EditText
+            android:id="@+id/signin_passwd_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:textSize="@dimen/h_textsiz" />
+
+        <EditText
+            android:id="@+id/signin_passwd_repeat_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/password_again"
+            android:inputType="textPassword"
+            android:textSize="@dimen/h_textsiz" />
+
+        <EditText
+            android:id="@+id/signin_email_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            android:textSize="@dimen/h_textsiz" />
+
+        <Button
+            android:id="@+id/signin_register_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_xxh"
+            android:background="@drawable/signin_btn"
+            android:text="@string/register"
+            android:textColor="@color/white"
+            android:textSize="@dimen/m_textsiz" />
+    </LinearLayout>
+</ScrollView>

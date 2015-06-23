@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/main_toolbar"
+        layout="@layout/toolbar"></include>
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <fragment
+            android:name="org.weread.HomeFragment"
+            android:id="@+id/main_content_panel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></fragment>
+
+        <include
+            android:id="@+id/main_drawer_view"
+            layout="@layout/drawer_layout" />
+    </android.support.v4.widget.DrawerLayout>
+</LinearLayout>

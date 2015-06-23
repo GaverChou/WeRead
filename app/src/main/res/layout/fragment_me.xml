@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/me_logined_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white">
+
+            <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/me_profile_img"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/drawer_layout_img_header_touxiang_bigbig_size"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/profile_bg" />
+
+            <org.weread.widget.RoundImageView
+                android:id="@+id/me_user_thumb"
+                style="@style/Touxiang_Big"
+                android:layout_below="@+id/me_profile_img"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="-48dp"
+                android:src="@mipmap/img1" />
+
+            <TextView
+                android:id="@+id/me_username_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/me_user_thumb"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/padding_m"
+                android:text="Medium Text"
+                android:textSize="@dimen/h_textsiz" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/me_username_tv"
+                android:layout_marginTop="@dimen/padding_m"
+                android:background="@color/gray_bg">
+
+                <View
+                    android:id="@+id/drawer_item_divider"
+                    android:layout_width="match_parent"
+                    android:layout_height="8dp"
+                    android:background="@drawable/shawdow" />
+
+                <LinearLayout
+                    android:id="@+id/relativeLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/person_03" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="性别"
+                            android:textSize="@dimen/h_textsiz" />
+
+                        <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/padding_m"
+                            android:background="@null"
+                            android:editable="false"
+                            android:enabled="true"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:inputType="textPersonName"
+                            android:text="男"
+                            android:textSize="@dimen/h_textsiz"
+                            android:id="@+id/me_gender_edt" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="48dp"
+                            android:src="@mipmap/old" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/padding_m"
+                            android:text="年龄"
+                            android:textSize="@dimen/h_textsiz" />
+
+                        <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/padding_m"
+                            android:background="@null"
+                            android:enabled="true"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:inputType="number"
+                            android:text="18"
+                            android:textSize="@dimen/xh_textsiz"
+                            android:id="@+id/me_old_edt" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/email" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="电子邮件"
+                            android:textSize="@dimen/h_textsiz" />
+
+                        <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="48dp"
+                            android:background="@null"
+                            android:enabled="true"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:inputType="textEmailAddress"
+                            android:text="12456456@qq.com"
+                            android:textSize="@dimen/h_textsiz"
+                            android:id="@+id/me_email_edt" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/address_12" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="我的地址"
+                            android:textSize="@dimen/h_textsiz" />
+
+                        <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="48dp"
+                            android:background="@null"
+                            android:enabled="true"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:inputType="textCapCharacters"
+                            android:text="广州大学城"
+                            android:textSize="@dimen/h_textsiz"
+                            android:id="@+id/me_addr_edt" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/me_nologin_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+            <Button
+                android:id="@+id/me_login_btn"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="@dimen/padding_xh"
+                android:background="@drawable/login_btn"
+                android:layout_centerInParent="true"
+                android:text="@string/login"
+                android:textColor="@color/white"
+                android:textSize="@dimen/m_textsiz" />
+        </RelativeLayout>
+    </RelativeLayout>
+</ScrollView>

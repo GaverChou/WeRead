@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="?attr/actionBarSize"
+    android:orientation="vertical">
+
+    <org.weread.widget.SimpleViewPagerIndicator
+        android:id="@+id/id_stickynavlayout_indicator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primary"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <RadioButton
+            android:id="@+id/home_home_btn"
+            style="@style/tab_btn"
+            android:checked="true"
+            android:drawableTop="@drawable/home_btn" />
+
+        <RadioButton
+            android:id="@+id/home_label_btn"
+            style="@style/tab_btn"
+            android:drawableTop="@drawable/label_btn" />
+
+        <RadioButton
+            android:id="@+id/home_discover_btn"
+            style="@style/tab_btn"
+            android:drawableTop="@drawable/discover_btn" />
+
+        <RadioButton
+            android:id="@+id/home_me_btn"
+            style="@style/tab_btn"
+            android:drawableTop="@drawable/me_btn" />
+    </org.weread.widget.SimpleViewPagerIndicator>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/id_stickynavlayout_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></android.support.v4.view.ViewPager>
+
+        <View
+            android:id="@+id/drawer_item_divider"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@drawable/shawdow" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:descendantFocusability="blocksDescendants">
+
+<LinearLayout
+    android:id="@+id/panel"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_toLeftOf="@+id/news_item_like_btn"
+    android:orientation="vertical"
+    android:padding="@dimen/padding_h">
+
+    <TextView
+        android:id="@+id/news_item_tit_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="@string/news_tit_test"
+        android:textColor="@color/black"
+        android:textSize="@dimen/h_textsiz" />
+
+    <TextView
+        android:id="@+id/news_item_from_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding_m"
+        android:text="@string/news_from_test"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="@dimen/m_textsiz" />
+
+    <TextView
+        android:id="@+id/news_item_sumary_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding_m"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="@string/art_sumary_test"
+        android:textColor="@color/gray600"
+        android:textSize="@dimen/m_textsiz" />
+</LinearLayout>
+
+<ImageButton
+    android:id="@+id/news_item_like_btn"
+    android:layout_width="36dp"
+    android:layout_height="36dp"
+    android:layout_marginRight="@dimen/padding_m"
+    android:layout_alignParentRight="true"
+    android:layout_below="@+id/news_item_jvli_tv"
+    android:background="@android:color/transparent"
+    android:src="@mipmap/ic_heart_outline_grey" />
+
+
+<TextView
+    android:id="@+id/news_item_jvli_tv"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentRight="true"
+    android:padding="@dimen/padding_h"
+    android:text="@string/news_jvli_test"
+    android:textColor="@color/gray600"
+    android:textSize="@dimen/s_textsiz" />
+</RelativeLayout>

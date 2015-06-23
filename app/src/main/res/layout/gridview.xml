@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<org.weread.widget.RefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/listview_refresh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:clipToPadding="false">
+
+    <GridView
+        android:id="@+id/main_grid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:gravity="center"
+        android:horizontalSpacing="@dimen/padding_m"
+        android:numColumns="2"
+        android:padding="@dimen/padding_m"
+        android:scrollbars="none"
+        android:verticalSpacing="@dimen/padding_m"></GridView>
+</org.weread.widget.RefreshLayout>

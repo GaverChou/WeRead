@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">WeRead</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">设置</string>
+    <string name="about">关于我们</string>
+    <string name="drawer_open">打开</string>
+    <string name="drawer_close">关闭</string>
+
+    <string name="home">首页</string>
+    <string name="find_label">发现&amp;类别</string>
+    <string name="love_article">喜爱的文章</string>
+    <string name="me">我的</string>
+    <string name="zanzhu">赞助我们</string>
+
+    <string name="username">用户名</string>
+    <string name="password">密码</string>
+    <string name="password_again">再次输入密码</string>
+    <string name="email">电子邮箱</string>
+
+    <string name="username_invalid">用户名不合法，不能为空！</string>
+    <string name="password_invalid">密码应当为8位以上！</string>
+    <string name="password_no_the_sam">密码输入不一致</string>
+    <string name="email_invalid">电子邮箱不合法！</string>
+    <string name="load_more">加载更多</string>
+
+    <string-array name="loginsinin_tit_list">
+        <item>注册</item>
+        <item>登录</item>
+    </string-array>
+
+    <string name="art_tit_test">魔哥女杀手洛基现身广外</string>
+    <string name="art_date_test">6/18/2015</string>
+    <string name="art_sumary_test">下面提供下载的压缩包里包含可安装的Adobe Photoshop和Adobe Illustrator调色板，以及一个介绍了如何给Photoshop安装</string>
+    <string name="art_type_tit_test">云计算</string>
+    <string name="art_type_count_test">13篇</string>
+    <string name="news_tit_test">新闻标题</string>
+    <string name="news_jvli_test">13m</string>
+    <string name="news_from_test">中央电视台</string>
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="register">加入，咕读</string>
+    <string name="login">登录我的账户</string>
+</resources>

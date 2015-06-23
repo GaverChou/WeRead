@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/main_toolbar"
+        layout="@layout/toolbar"></include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/padding_m">
+
+                <com.android.volley.toolbox.NetworkImageView
+                    android:id="@+id/art_detail_thumb_imgv"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/art_detail_height"
+                    android:layout_marginTop="@dimen/padding_m"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/profile_bg" />
+
+                <TextView
+                    android:id="@+id/art_detail_tit_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/padding_xh"
+                    android:textSize="@dimen/xh_textsiz"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/art_detail_date_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/padding_m"
+                    android:text="@string/art_date_test"
+                    android:textColor="@color/blue_text"
+                    android:textSize="@dimen/m_textsiz" />
+
+            </LinearLayout>
+
+            <WebView
+                android:id="@+id/webview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                android:layout_marginTop="@dimen/padding_h" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

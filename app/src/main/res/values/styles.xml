@@ -1,0 +1,78 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="AppTheme.Toolbar" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primaryDark</item>
+        <item name="colorAccent">@color/accent</item>
+        <!--<item name="android:windowBackground">@color/white</item>-->
+    </style>
+
+    <style name="FullScreenTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="Toolbar" parent="Theme.AppCompat">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primaryDark</item>
+        <item name="colorAccent">@color/accent</item>
+    </style>
+
+    <style name="Drawer">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:layout_gravity">start</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="Drawer.Seletor">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/drawer_layout_selector_height</item>
+        <item name="android:padding">@dimen/padding_h</item>
+        <item name="android:background">@drawable/drawer_item_bg</item>
+    </style>
+
+    <style name="Drawer.Seletor_tv">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/m_textsiz</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <style name="Touxiang">
+        <item name="android:layout_width">@dimen/drawer_layout_img_header_touxiang_size</item>
+        <item name="android:layout_height">@dimen/drawer_layout_img_header_touxiang_size</item>
+        <item name="android:src">@mipmap/img1</item>
+    </style>
+
+    <style name="Touxiang_Big">
+        <item name="android:layout_width">@dimen/drawer_layout_img_header_touxiang_big_size</item>
+        <item name="android:layout_height">@dimen/drawer_layout_img_header_touxiang_big_size</item>
+        <item name="android:src">@mipmap/img1</item>
+    </style>
+
+    <style name="Touxiang_Big_Big">
+        <item name="android:layout_width">@dimen/drawer_layout_img_header_touxiang_bigbig_size
+        </item>
+        <item name="android:layout_height">@dimen/drawer_layout_img_header_touxiang_bigbig_size
+        </item>
+        <item name="android:src">@mipmap/img1</item>
+    </style>
+
+    <style name="tab_btn">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">0dp</item>
+        <item name="android:button">@null</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+</resources>

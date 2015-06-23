@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginLeft="@dimen/padding_m"
+    android:layout_marginRight="@dimen/padding_m"
+    android:layout_marginTop="@dimen/padding_m"
+    card_view:cardBackgroundColor="@color/white"
+    card_view:cardCornerRadius="2dp">
+
+    <org.weread.widget.SquaredFrameLayout
+        android:id="@+id/vImageRoot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/art_type_item_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@mipmap/profile_bg" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:padding="@dimen/padding_m"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/art_item_type_tit_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/art_type_tit_test"
+                android:textColor="@color/gray600"
+                android:textSize="@dimen/h_textsiz" />
+
+            <TextView
+                android:id="@+id/art_item_type_count_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/art_type_count_test"
+                android:textColor="@color/gray300"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/s_textsiz"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
+    </org.weread.widget.SquaredFrameLayout>
+</android.support.v7.widget.CardView>

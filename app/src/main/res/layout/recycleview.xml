@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <org.weread.widget.RefreshLayout
+        android:id="@+id/listview_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:layout_above="@+id/recycleview_loadmore"
+        android:paddingBottom="@dimen/padding_m">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/main_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none" />
+    </org.weread.widget.RefreshLayout>
+
+    <include
+        android:id="@+id/recycleview_loadmore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/load_more"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>
