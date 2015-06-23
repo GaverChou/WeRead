@@ -34,6 +34,10 @@
             android:name=".ArtDetailActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.Toolbar"></activity>
+        <activity
+            android:name=".AboutActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Toolbar"></activity>
     </application>
 
 </manifest>

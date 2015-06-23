@@ -59,6 +59,7 @@ public class PostObjectRequest<T> extends Request<T> {
             T result;
             String jsonString = new String(response.data,
                     HttpHeaderParser.parseCharset(response.headers, DEFAULT_PARAMS_ENCODING));
+            Log.d("jsonString",jsonString);
             result = mGson.fromJson(jsonString, mClazz);
             return Response.success(result,
                     HttpHeaderParser.parseCacheHeaders(response));

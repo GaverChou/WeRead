@@ -52,8 +52,6 @@ public class MainActivity extends BaseActivity {
     DrawerLayout mDrawerLayout;
     @InjectView(R.id.listView)
     RecyclerView mDrawerSeletItemListv;
-    @InjectView(R.id.drawer_layout_touxiang_img)
-    ImageView mUserThumbImg;
     HomeFragment homeFragment;
     private ActionBarDrawerToggle mDrawerToggle;
     private DrawerListAdapter mDrawerAdapter;
@@ -82,7 +80,7 @@ public class MainActivity extends BaseActivity {
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         Log.d("onActivityResult",requestCode+"|"+resultCode);
-        if (requestCode==262144&&resultCode == Activity.RESULT_OK) {
+        if (resultCode == Activity.RESULT_OK) {
             Uri uri = data.getData();
             if (uri!=null){
                 Bitmap cameraBitmap = Util.getBitmapFromUri(this, uri);
@@ -96,21 +94,23 @@ public class MainActivity extends BaseActivity {
                 imageList.add(formImage);
                 uploadImg(imageList);
             }
-        } else if (requestCode==262145&&resultCode == Activity.RESULT_OK) {
-            Uri uri = data.getData();
-            if (uri!=null){
-                Bitmap cameraBitmap = Util.getBitmapFromUri(this, uri);
-                progressDialog = new ProgressDialog(this, "上传中。。");
-                progressDialog.show();
-                AccessToken token = AccessTokenKeper.readAccessToken(this);
-                List<FormImage> imageList = new ArrayList<FormImage>();
-                FormImage formImage = new FormImage(cameraBitmap);
-                formImage.setmName(token.getUid() + "");
-                formImage.setmFileName(token.getUid() + UUID.randomUUID().toString() +"touxiang.png");
-                imageList.add(formImage);
-                uploadImgBg(imageList);
-            }
-        }else {
+        }
+//        else if (requestCode==262145&&resultCode == Activity.RESULT_OK) {
+//            Uri uri = data.getData();
+//            if (uri!=null){
+//                Bitmap cameraBitmap = Util.getBitmapFromUri(this, uri);
+//                progressDialog = new ProgressDialog(this, "上传中。。");
+//                progressDialog.show();
+//                AccessToken token = AccessTokenKeper.readAccessToken(this);
+//                List<FormImage> imageList = new ArrayList<FormImage>();
+//                FormImage formImage = new FormImage(cameraBitmap);
+//                formImage.setmName(token.getUid() + "");
+//                formImage.setmFileName(token.getUid() + UUID.randomUUID().toString() +"touxiang.png");
+//                imageList.add(formImage);
+//                uploadImgBg(imageList);
+//            }
+//        }
+        else {
             new SnackBar(this, "选择图片失败,请重新选择")
                     .show();
         }

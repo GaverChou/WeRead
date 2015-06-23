@@ -4,7 +4,8 @@
     <color name="primaryDark">#0097a7</color>
     <color name="accent">#eeff41</color>
     <color name="white">#ffffff</color>
-    <color name="item_click">#e6e6e6</color>
+    <color name="bg_theme">#EEEEEE</color>
+    <color name="item_click">#e6e6e6</color>#
     <color name="black">#212121</color>
     <color name="gray">#616161</color>
     <color name="gray600">#757575</color>

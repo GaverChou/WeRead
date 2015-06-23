@@ -54,7 +54,7 @@ public class ArtDetailActivity extends BaseActivity {
         webSettings.setLayoutAlgorithm(WebSettings.LayoutAlgorithm.SINGLE_COLUMN);
         webSettings.setDefaultFontSize(16);
         webSettings.setDefaultTextEncodingName("UTF -8");//设置默认为utf-8
-        webView.setBackgroundColor(0); // 设置背景色
+        webView.setBackgroundColor(getResources().getColor(R.color.bg_theme)); // 设置背景色
     }
 
     @Override

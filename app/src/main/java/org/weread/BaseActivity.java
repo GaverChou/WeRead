@@ -57,15 +57,21 @@ public abstract class BaseActivity extends AppCompatActivity implements SwipeVie
     public void setRefreshing(boolean refreshing) {
         if (mSwipeRefreshLayout != null) mSwipeRefreshLayout.setRefreshing(refreshing);
     }
+
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case android.R.id.home:// 点击返回图标事件
                 this.finish();
-            default:
-                return super.onOptionsItemSelected(item);
+                break;
+            case R.id.about:
+                Intent intent = new Intent(this, AboutActivity.class);
+                startActivity(intent);
+                break;
         }
+        return super.onOptionsItemSelected(item);
     }
+
     @Override
     public boolean pullToRefreshEnabled() {
         return mSwipeRefreshLayout != null;

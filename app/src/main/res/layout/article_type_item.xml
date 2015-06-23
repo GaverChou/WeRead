@@ -19,7 +19,7 @@
             android:id="@+id/art_type_item_img"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:scaleType="fitXY"
+            android:scaleType="center"
             android:src="@mipmap/profile_bg" />
 
         <RelativeLayout

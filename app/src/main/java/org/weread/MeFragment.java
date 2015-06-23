@@ -117,13 +117,13 @@ public class MeFragment extends BaseFragment<MainActivity> {
     private void getUserInfo(AccessToken token) {
         UserInfo userInfo = UserInfoKeeper.readUserInfo(mActivity);
         String username = userInfo.getUsers().getUsername();
-        if (username != null && !"".equals(username)) {
-            mAddrEdit.setText(userInfo.getAddr());
-            mGenderEdit.setText(userInfo.getGender());
-            mOldEdit.setText(userInfo.getOld() + "");
-            mEmailEdit.setText(userInfo.getUsers().getEmail());
-            mUsernameTv.setText(userInfo.getUsers().getUsername());
-        } else {
+//        if (username != null && !"".equals(username)) {
+//            mAddrEdit.setText(userInfo.getAddr());
+//            mGenderEdit.setText(userInfo.getGender());
+//            mOldEdit.setText(userInfo.getOld() + "");
+//            mEmailEdit.setText(userInfo.getUsers().getEmail());
+//            mUsernameTv.setText(userInfo.getUsers().getUsername());
+//        } else {
             UserApi.getUserInfoById(token.getUid() + "", new ResponseListener<UserInfo>() {
                 @Override
                 public void onErrorResponse(VolleyError error) {
@@ -141,7 +141,7 @@ public class MeFragment extends BaseFragment<MainActivity> {
                     }
                 }
             });
-        }
+//        }
         String imgUrl = UserInfoKeeper.getUserThumb(mActivity);
         String imgUrlBg = UserInfoKeeper.getUserThumbBg(mActivity);
         NetworkImageLoader.loadIntoNetworkImageView(mUserBgImg, imgUrlBg, R.mipmap.profile_bg);
